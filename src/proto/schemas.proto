@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message Message {
+  string title = 1;
+  string message = 2;
+
+  enum MessageType {
+    UNDEFINED = 0;
+    HELLO_WORLD = 1;
+    REQUEST_FOR_CHANGE = 2;
+  }
+
+  MessageType type = 3;
+}
